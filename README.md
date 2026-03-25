@@ -10,7 +10,7 @@ I like challenges, so I would like to combine assignments from 'Applied Algorith
 - Contact
 
 ## How to run
-1. Clone the repository: ``
+1. Clone the repository: `https://github.com/upside-code/Lost-Soul.git`
 2. Open `index.html` in your browser
 3. No build tools or installation required
 
