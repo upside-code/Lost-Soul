@@ -1,34 +1,141 @@
 :root
 {
-    --bg:       #0a0705;
-    --bg2:      #110d08;
-    --bg3:      #1a1209;
-    --text:     #e8d5b0;
-    --text2:    #a08060;
-    --text3:    #6a5030;
-    --accent:   #d4822a;
+    --bg:       #F5F1ED;
+    --bg2:      #DAD2BC;
+    --text:     #252323;
+    --accent:   #70798c;
+    --accent2:  #F08700;
     --font-display: 'Cinzel', serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+}
+header
+{
+    width: 100%;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--bg2);
+    border-bottom: 1px solid var(--accent);
 }
 body
 {
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg);
     color: var(--text);
+    min-height: 100vh;
 }
-.nav-links
+main
 {
-    display: flex;
-    gap: 0.25rem;
-    list-style: none;
+    flex: 1;
 }
+
+
+@media (max-width: 768px)
+{
+    .nav-links
+    {
+        display: none;
+    }
+    .nav-toggle
+    {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    .footer .nav-links
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 768px)
+{
+    .nav-links
+    {
+        display: flex;
+        gap: 0.25rem;
+        list-style: none;
+    }
+    .nav-toggle
+    {
+        display: none;
+    }
+}
+
 .nav-links a
 {
     display: block;
     padding: 0.4rem 0.9rem;
-    font-family: var(--font-display);
-    font-size: 0.42rem;/*Default: Most browsers have a default root font-size of 16px. Therefore, 1rem usually equals 16px.*/
+    font-size: 1rem;/*Default: Most browsers have a default root font-size of 16px. Therefore, 1rem usually equals 16px.*/
     letter-spacing: 0.12em;/*If a <div> has a font-size of 20px, then 1em inside that div is 20px. If you put another element inside that with 2em, it becomes 40px.*/
+    color: var(--text);
+    text-decoration: none;
 }
 .nav-links a:hover, .nav-links a.active
 {
-    color: var(--accent);
+    color: var(--accent2);
+    background-color: var(--text);
+}
+.nav-logo
+{
+    font-size: 1.2rem;
+    font-family: var(--font-display), serif;
+    color: var(--text);
+
+}
+.footer
+{
+    width: 100%;
+    padding: 2rem;
+    margin-top: auto;
+    border-top: 1px solid var(--accent);
+    background-color: var(--bg2);
+}
+.footer .nav-links
+{
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+
+}
+
+.footer-inner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+.nav-links.active
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg2);
+    padding: 1rem;
+    list-style: none;
+    border-bottom: 1px solid var(--accent);
+    z-index: 100;
+}
+.nav-links.active a
+{
+    border-bottom: 1px solid var(--accent);
 }
