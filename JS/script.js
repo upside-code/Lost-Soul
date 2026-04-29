@@ -6,3 +6,9 @@ toggle.addEventListener('click', () =>
 {
     links.classList.toggle('active');
 });
+
+
+const lightbox = GLightbox(
+    {
+
+});

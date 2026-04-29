@@ -61,6 +61,17 @@ main
         flex-direction: column;
         align-items: center;
     }
+    .gallery
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px)
+{
+    .gallery
+    {
+        grid-template-columns: 1fr;
+    }
 }
 @media (min-width: 768px)
 {
@@ -73,6 +84,10 @@ main
     .nav-toggle
     {
         display: none;
+    }
+    .gallery
+    {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -138,4 +153,28 @@ main
 .nav-links.active a
 {
     border-bottom: 1px solid var(--accent);
+}
+h1
+{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--text);
+}
+.gallery
+{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.gallery img
+{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
 }
