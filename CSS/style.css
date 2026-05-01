@@ -65,12 +65,20 @@ main
     {
         grid-template-columns: 1fr 1fr;
     }
+    .row
+    {
+        flex-direction: column;
+    }
 }
 @media (max-width: 480px)
 {
     .gallery
     {
         grid-template-columns: 1fr;
+    }
+    .row
+    {
+        flex-direction: column;
     }
 }
 @media (min-width: 768px)
@@ -156,10 +164,37 @@ main
 }
 h1
 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text);
+}
+h3
+{
+    text-align: center;
+    color: var(--text);
+}
+p
+{
     font-size: 1.2rem;
     text-align: center;
     padding: 0.5rem;
-    color: var(--text);
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.col-left
+{
+    flex:1;
+    padding: 0 15rem 0 15rem;
+}
+.col-right
+{
+    flex:1;
 }
 .gallery
 {
@@ -177,4 +212,21 @@ h1
     object-fit: cover;
     cursor: pointer;
     display: block;
+}
+.form-control
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1.2rem;
+    padding: 0 3rem 0 3rem;
+}
+.form-control label
+{
+    font-weight: bold;
+}
+.form-control button
+{
+    display: flex;
+    align-self: flex-end;
 }
