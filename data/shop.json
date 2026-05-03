@@ -1,0 +1,47 @@
+{
+  "shop":
+    {
+      "floors": "1-3",
+      "name": "merchant",
+      "currency": "gold",
+      "items":
+      [
+        {
+          "id": "1a",
+          "name": "Health",
+          "type": "consumable",
+          "price": "10",
+          "stats":
+          {
+            "healAmount": 30,
+            "effects":
+            {
+              "type": "Heal",
+              "value": 30,
+              "stackable": true
+            }
+          }
+        },
+        {
+          "id": "2a",
+          "name": "Iron Sword",
+          "type": "weapon",
+          "price": 50,
+          "stats":
+          {
+            "damage": 10,
+            "speed": "medium",
+            "effects":
+            {
+              "type": "Bleed",
+              "value": 3,
+              "chance": 25,
+              "stackable": true
+            }
+          }
+        }
+      ]
+    }
+}
+
+

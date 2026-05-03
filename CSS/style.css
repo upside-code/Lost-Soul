@@ -164,6 +164,7 @@ main
 }
 h1
 {
+    font-family: var(--font-display), serif;
     font-size: 2.2rem;
     text-align: center;
     padding: 1.5rem;
@@ -171,6 +172,7 @@ h1
 }
 h3
 {
+    font-family: var(--font-display), serif;
     text-align: center;
     color: var(--text);
 }
@@ -229,4 +231,37 @@ p
 {
     display: flex;
     align-self: flex-end;
+}
+.shop-container
+{
+    padding: 2rem 4rem;
+}
+.shop-subtitle
+{
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 2rem;
+}
+#shopTable
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+#shopTable th
+{
+    background-color: var(--text);
+    color: var(--accent2);
+    padding: 0.6rem 1rem;
+    font-family: var(--font-display), serif;
+    letter-spacing: 0.05rem;
+}
+#shopTable td
+{
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--accent);
+}
+#shopTable tr:hover
+{
+    background-color: var(--bg2);
+    cursor: pointer;
 }

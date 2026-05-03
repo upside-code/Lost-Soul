@@ -8,7 +8,7 @@ toggle.addEventListener('click', () =>
 });
 
 
-//const lightbox = GLightbox({});
+
 
 
 
