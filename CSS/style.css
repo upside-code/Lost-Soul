@@ -227,10 +227,24 @@ p
 {
     font-weight: bold;
 }
+.pointer
+{
+    cursor: pointer;
+}
+.pointer:hover
+{
+    background-color: var(--accent);
+}
+select
+{
+    cursor: pointer;
+}
+
 .form-control button
 {
     display: flex;
     align-self: flex-end;
+    cursor:pointer;
 }
 .shop-container
 {
