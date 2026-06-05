@@ -302,3 +302,41 @@ select
 .cell-floor { background: #c8a060; border-color: #e0b870; }
 .cell-entrance { background: #1a5a1a; border-color: #40cc40; color: #aaffaa; text-align: center; }
 .cell-exit     { background: #5a1a1a; border-color: #cc4040; color: #ffaaaa; text-align: center; }
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#overlayImg {
+    max-width: 90%;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+#closeBtn, #prevBtn, #nextBtn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: var(--accent2);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#closeBtn { top: 20px; right: 30px; }
+#prevBtn  { left: 20px; }
+#nextBtn  { right: 20px; }
+
+

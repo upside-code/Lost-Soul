@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
 
 </head>
 
@@ -30,12 +30,19 @@
 <main>
     <h1>This section will only contain unrelated pictures from Loreum picsum</h1>
     <section class="gallery">
-        <a href="https://picsum.photos/id/10/800/600" data-lightbox="gallery"><img src="https://picsum.photos/id/10/300/200" alt="Loreum Picsum"></a>
-        <a href="https://picsum.photos/id/20/800/600" data-lightbox="gallery"><img src="https://picsum.photos/id/20/300/200" alt="Loreum Picsum"></a>
-        <a href="https://picsum.photos/id/30/800/600" data-lightbox="gallery"><img src="https://picsum.photos/id/30/300/200" alt="Loreum Picsum"></a>
-        <a href="https://picsum.photos/id/40/800/600" data-lightbox="gallery"><img src="https://picsum.photos/id/40/300/200" alt="Loreum Picsum"></a>
-        <a href="https://picsum.photos/id/50/800/600" data-lightbox="gallery"><img src="https://picsum.photos/id/50/300/200" alt="Loreum Picsum"></a>
-        <a href="https://picsum.photos/id/60/800/600" data-lightbox="gallery"><img src="https://picsum.photos/id/60/300/200" alt="Loreum Picsum"></a>
+        <a href="https://picsum.photos/id/10/800/600" ><img src="https://picsum.photos/id/10/2400/1600" alt="Loreum Picsum"></a>
+        <a href="https://picsum.photos/id/20/800/600" ><img src="https://picsum.photos/id/20/2400/1600" alt="Loreum Picsum"></a>
+        <a href="https://picsum.photos/id/30/800/600" ><img src="https://picsum.photos/id/30/2400/1600" alt="Loreum Picsum"></a>
+        <a href="https://picsum.photos/id/40/800/600" ><img src="https://picsum.photos/id/40/2400/1600" alt="Loreum Picsum"></a>
+        <a href="https://picsum.photos/id/50/800/600" ><img src="https://picsum.photos/id/50/2400/1600" alt="Loreum Picsum"></a>
+        <a href="https://picsum.photos/id/60/800/600" ><img src="https://picsum.photos/id/60/2400/1600" alt="Loreum Picsum"></a>
+
+        <div id="overlay" class="overlay hidden">
+            <button id="closeBtn">✕</button>
+            <button id="prevBtn">&#8249;</button>
+            <img id="overlayImg" src="" alt="">
+            <button id="nextBtn">&#8250;</button>
+        </div>
     </section>
 </main>
 
@@ -53,8 +60,7 @@
         </nav>
     </div>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 <script src="JS/script.js"></script>
 </body>
 </html>
